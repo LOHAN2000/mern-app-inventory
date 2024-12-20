@@ -1,0 +1,24 @@
+POST http://localhost:8888/api/products
+Content-Type: application/json
+
+{
+    "name": "SmartTV Samsung",
+    "price": "999.00",
+    "image": "example.com/image"
+}
+###
+
+DELETE http://localhost:8888/api/products/6750d639ac4e85133bd0c478
+
+###
+
+GET http://localhost:8888/api/products
+
+###
+
+PUT http://localhost:8888/api/products/6750d7dc25be3997807deb6c
+Content-Type: application/json
+
+{
+    "image": "example.com/smartwatch"
+}
