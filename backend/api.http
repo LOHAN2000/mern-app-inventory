@@ -8,7 +8,7 @@ Content-Type: application/json
 }
 ###
 
-DELETE http://localhost:8888/api/products/6750d639ac4e85133bd0c478
+DELETE http://localhost:8888/api/products/676da055c3f578d71dd6eeee
 
 ###
 

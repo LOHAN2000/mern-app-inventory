@@ -5,17 +5,15 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "dev": "cross-env NODE_ENV=development node backend/server.js",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "backend": "node --watch ./server.js"
+    "build": "npm install --prefix backend && npm install --prefix frontend && npm run build --prefix frontend",
+    "start": "cross-env NODE_ENV=production node --watch backend/server.js"
   },
-  "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "dotenv": "^16.4.7",
-    "express": "^4.21.2",
-    "mern-app-inventory": "file:..",
-    "mongoose": "^8.8.4"
+    "dotenv": "^16.4.7"
   },
   "devDependencies": {
     "cross-env": "^7.0.3"
