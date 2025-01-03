@@ -20,7 +20,7 @@ if(process.env.NODE_ENV === 'production') {
     res.sendFile(path.resolve(__dirname, 'frontend', 'dist', 'index.html'))
   })
 }
-
+console.log(process.env.PORT)
 app.listen(PORT, () => {
   connectDB()
   console.log(`Server started at http://localhost:${PORT}`)
